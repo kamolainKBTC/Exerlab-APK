@@ -2,23 +2,24 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Exerlab Download</title>
+  <title>Downloading Exerlab…</title>
 </head>
 <body style="text-align:center;font-family:sans-serif;margin-top:60px">
 
-<h2>Exerlab App</h2>
-<p>กดปุ่มด้านล่างเพื่อดาวน์โหลดแอป</p>
+<h3>กำลังเริ่มดาวน์โหลด…</h3>
+<p>หากไม่เริ่มอัตโนมัติ ให้แตะปุ่มด้านล่าง</p>
 
-<button style="font-size:22px;padding:15px 35px"
-onclick="download()">
-ดาวน์โหลดแอป
+<button style="font-size:20px;padding:14px 30px" onclick="go()">
+ดาวน์โหลดอีกครั้ง
 </button>
 
 <script>
-function download() {
+function go() {
   window.location.href =
    "intent://github.com/kamolainKBTC/Exerlab-APK/releases/download/v0.3.4/app-release.apk#Intent;scheme=https;package=com.android.chrome;end";
 }
+
+setTimeout(go, 300); // auto-run
 </script>
 
 </body>
